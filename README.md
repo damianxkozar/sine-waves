@@ -5,14 +5,13 @@ Generate multiple configurable sine waves using a `canvas` element
 [![Build Status](http://img.shields.io/travis/isuttell/sine-waves/master.svg?style=flat)](https://travis-ci.org/isuttell/sine-waves)
 [![Coverage Status](https://img.shields.io/coveralls/isuttell/sine-waves/master.svg?style=flat)](https://coveralls.io/r/isuttell/sine-waves)
 [![Codacy Badge](https://img.shields.io/codacy/a52fd69032474c0ca88dc06ab69a9839.svg?style=flat)](https://www.codacy.com/public/isuttell/sine-waves)
-[![Dev Dependencies](http://img.shields.io/david/dev/isuttell/sine-waves.svg?style=flat)](https://david-dm.org/isuttell/sine-waves?type=dev)
-[![Release](https://img.shields.io/npm/v/sine-waves.svg?style=flat)](https://www.npmjs.com/package/sine-waves)
+[![Dev Dependencies](http://img.shields.io/david/dev/isuttell/sine-waves.svg?style=flat)](https://david-dm.org/isuttell/sine-waves#info=devDependencies)
+[![Release](https://img.shields.io/bower/v/sine-waves.svg?style=flat)](https://github.com/isuttell/sine-waves/tarball/master)
 
-
-## NPM
+## Bower
 
 ```shell
-npm install sine-waves --save
+bower install sine-waves --save
 ```
 
 ## Basic Usage
@@ -32,7 +31,7 @@ var waves = new SineWaves({
 
   // Specific how much the width of the canvas the waves should be
   // This can either be a number or a percent
-  waveWidth: '95%',
+  waveWidth: '95%'
 
   // An array of wave options
   waves: [
@@ -44,6 +43,7 @@ var waves = new SineWaves({
       segmentLength: 20, // How smooth should the line be
       strokeStyle: 'rgba(255, 255, 255, 0.5)', // Stroke color and opacity
       type: 'sine'       // Wave type
+      yAxis: '50'        // Position of wave on y-axis, optional, defaults to centering the wave on the y-axis
     },
     {
       timeModifier: 1,
